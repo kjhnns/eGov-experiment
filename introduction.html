@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>eGoverment</title>
+    <link href="stylesheets/site.css" rel="stylesheet" />
+    <script src="javascripts/site.js"></script>
+  </head>
+  <body>
+    <div class="header">
+Now put yourself in Caroline‘s shoes who needs to renew her driver license and learns about a government initiative to introduce eID
+</div>
+<div class="main">
+    <div class="row">
+        <div class="box infos">
+            <ul>
+                <li>Imagine yourself in Caroline’s shoes, whose <b>driver license is about to expire</b>. As Caroline has never renewed her license before, she goes online to understand what needs to be done in order to renew it</li>
+                <li>When Caroline reaches the government's website, she notices that the government is planning a state-wide <b>introduction of an eID</b> that will replace the current ID/driver license card in the long-term</li>
+                <li>However, as the government is still at the beginning of this digital initiative, <b>citizens are allowed to chose</b> between the traditional driver license/ID and the eID system</li>
+
+            </ul>
+        </div>
+
+    </div>
+    <div class="row">
+        <img src="images/stock03.png" style="width: 30%; height: 30%; padding: 1em;">
+        <div id="proceed" class="submit" style="margin: auto 1em;">Next</div>
+        <img src="images/stock04.png" style="width: 30%; height: 30%; padding: 1em;">
+    </div>
+</div>
+
+<script>
+    var conditions = ['0', 'd', 's', 'sd'];
+    var condition = Math.floor(Math.random() * conditions.length);
+    document.getElementById('proceed').onclick= function() {
+        location.href= conditions[condition] +".html"
+    };
+</script>
+
+
+  </body>
+</html>
