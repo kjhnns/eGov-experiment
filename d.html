@@ -92,17 +92,17 @@
             </div>
         </div>
     </div>
-    <form action="http://umfragen.ise.tu-darmstadt.de/sosci/egov/" method="get" >
+    <form name="sosci" action="http://umfragen.ise.tu-darmstadt.de/sosci/egov/" onsubmit="return validateForm()" method="get" >
     <div class="row">
         <div class="option">
 
     <div class="col">
-            <div class="optionrow"><input type="radio" name="eid" value="1" checked="checked" required/>eID</div>
+            <div class="optionrow"><input type="radio" name="eid" value="1" checked="checked" />eID</div>
           </div>
           </div>
         <div class="option">
           <div class="col">
-            <div class="optionrow"><input type="radio" name="eid" value="0" required/>ID card</div>
+            <div class="optionrow"><input type="radio" name="eid" value="0" />ID card</div>
           </div>
         </div>
     </div>
@@ -110,8 +110,9 @@
         <div class="col">
                         <input type="hidden" value="ptest" name="password" />
                         <input type="hidden" value="0" name="sproof" />
+                        <input type="hidden" value="1" name="dopt" />
             <button class="submit">Submit</button>
-            <div class="label">Please select ID type</div>
+            <!-- <div class="label">Please select ID type</div> -->
         </div>
     </div>
     </form>
