@@ -79,30 +79,33 @@
             </div>
         </div>
     </div>
-    <form name="sosci" action="http://umfragen.ise.tu-darmstadt.de/sosci/egov/" onsubmit="return validateForm()" method="get" >
-    <div class="row">
-        <div class="option">
-
-    <div class="col">
-            <div class="optionrow"><input type="radio" checked="checked" name="eid" value="1" />eID</div>
-            <img class="socialproof" src="/images/sproof.png" />
-          </div>
-          </div>
-        <div class="option">
-          <div class="col">
-            <div class="optionrow"><input type="radio" name="eid" value="0" />ID card</div>
-            <img class="socialproof" src="/images/sproof2.png" />
-          </div>
+    <form name="sosci" action="http://umfragen.ise.tu-darmstadt.de/sosci/egov/" onsubmit="return validateForm()" method="get">
+        <div class="row">
+            <div class="option">
+                <div class="col">
+                    <div class="infoEid">Please note: By selecting the option eID you agree to the noncommercial usage of your data for government-related services and purposes</div>
+                    <div class="optionrow">
+                        <input type="radio" checked="checked" name="eid" value="1" />eID</div>
+                    <img class="socialproof" src="images/social-proof.png" />
+                </div>
+            </div>
+            <div class="option">
+                <div class="col">
+                    <div class="infoEid" style="color: rgba(255,255,255,0)">Please note: By selecting the option eID you agree to the noncommercial usage of your data for government-related services and purposes</div>
+                    <div class="optionrow">
+                        <input type="radio" name="eid" value="0" />ID card</div>
+                    <!-- <img class="socialproof" src="/images/sproof2.png" /> -->
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-                        <input type="hidden" value="ptest" name="password" />
-                        <input type="hidden" value="1" name="sproof" />
-                        <input type="hidden" value="1" name="dopt" />
-            <button class="submit">Submit</button>
-            <!-- <div class="label">Please select ID type</div> -->
+        <div class="row">
+            <div class="col">
+                <input type="hidden" value="ptest" name="password" />
+                <input type="hidden" value="1" name="sproof" />
+                <input type="hidden" value="1" name="dopt" />
+                <button class="submit">Submit</button>
+                <!-- <div class="label">Please select ID type</div> -->
+            </div>
         </div>
-    </div>
     </form>
 </div>
