@@ -8,7 +8,6 @@ Now put yourself in Caroline‘s shoes who needs to renew her driver license and
                 <li>Imagine yourself in Caroline’s shoes, whose <b>driver license is about to expire</b>. As Caroline has never renewed her license before, she goes online to understand what needs to be done in order to renew it</li>
                 <li>When Caroline reaches the government's website, she notices that the government is planning a state-wide <b>introduction of an eID</b> that will replace the current ID/driver license card in the long-term</li>
                 <li>However, as the government is still at the beginning of this digital initiative, <b>citizens are allowed to chose</b> between the traditional driver license/ID and the eID system</li>
-
             </ul>
         </div>
 
@@ -22,6 +21,7 @@ Now put yourself in Caroline‘s shoes who needs to renew her driver license and
 
 <script>
     var conditions = ['0', 'd', 's', 'sd'];
+    // var conditions = ['d', 's', 'sd'];
     var condition = Math.floor(Math.random() * conditions.length);
     document.getElementById('proceed').onclick= function() {
         location.href= conditions[condition] +".html"
